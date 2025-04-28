@@ -5,7 +5,7 @@ export const AppContext = createContext();
 
 export const AppContextProvider = ({ children }) => {
     const navigate = useNavigate();
-    const [user, setUser] = useState(false); // change to `null` if you want to default to logged out
+    const [user, setUser] = useState(true); // change to `null` if you want to default to logged out
     const [isSeller, setIsSeller] = useState(false);
     const [showUserLogin, setShowUserLogin] = useState(false);
 
